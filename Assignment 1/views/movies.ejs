@@ -1,0 +1,12 @@
+<body>
+    <ul>
+        <% movies.forEach((Movies)=> { %>
+        <li>
+            <h2><%= Movies.title %> </h2>
+            <p>By: <%= Movies.director %></p>
+            <p>Staring: <%= Movies.stars %></p>
+        </li>
+        <hr />
+        <% }) %>
+    </ul>
+</body>
