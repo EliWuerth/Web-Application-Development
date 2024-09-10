@@ -1,0 +1,16 @@
+<mat-toolbar color="primary">
+  <mat-toolbar-row>
+  <button mat-icon-button [matMenuTriggerFor]="menu" (click)="onToggleSidenav()"><mat-icon>menu</mat-icon></button>
+    <mat-menu #menu="matMenu">
+      <button mat-menu-item routerLink="/userLogins">Users</button>
+      <button mat-menu-item routerLink="/create">Create</button>
+      <button mat-menu-item routerLink="/login">Sign In</button>
+    </mat-menu>
+    <span>Eli Wuerth: emwcd7</span>
+    <span class="spacer"></span>
+    <button mat-button routerLink="">Home</button>
+    <button mat-button routerLink="/create">Create</button>
+    <button mat-button routerLink="/login">Login</button>
+    <button mat-button routerLink="/userLogins">Users</button>
+  </mat-toolbar-row>
+</mat-toolbar>

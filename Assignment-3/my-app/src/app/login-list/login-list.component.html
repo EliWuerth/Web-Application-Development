@@ -1,0 +1,16 @@
+<mat-accordion multi="true" *ngIf="logins.length > 0">
+  <mat-expansion-panel *ngFor="let login of logins">
+      <mat-expansion-panel-header>
+        <p>
+          {{login.email}}
+        </p>
+      </mat-expansion-panel-header>
+       <p>{{login.password}}</p>
+      <mat-action-row>
+        <button mat-button color="primary">Edit</button>
+        <button mat-button color="acccent" (click)="onDelete(login.id)">Delete</button>
+      </mat-action-row>
+  </mat-expansion-panel>
+</mat-accordion>
+<p class="info-text mat-body-1" *ngIf="logins.length <= 0"> No content to render</p>
+
