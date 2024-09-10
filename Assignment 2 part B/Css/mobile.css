@@ -1,0 +1,146 @@
+@import url("https://fonts.googleapis.com/css?family=Work+Sans:400,600");
+
+body { 
+	background-color: #b5a789;
+	font-family: Georgia, "Times New Roman", Times, serif;
+	font-size: small;
+	margin: 0px;
+}
+
+#main {
+	background: #efe5d0 url(images/images/background.gif) top left;
+	font-size: 105%;
+	padding: 15px;
+	margin: 0px 10px 10px 10px;
+}
+
+#sidebar {
+	background: #efe5d0 url(images/images/background.gif) bottom right;
+	font-size: 105%;
+	padding: 15px;
+	margin: 0px 10px 10px 10px;
+}
+
+#footer {
+	background-color: #675c47;
+	color: #efe5d0;
+	text-align: center;
+	padding: 15px;
+	margin: 10px;
+	font-size: 90%;
+}
+
+#header {
+	background-color: #675c47;
+	margin: 10px;
+	height: 108px;
+}
+
+#drinks {
+	background: #efe5d0 url(images/images/background.gif) top left;
+	font-size: 105%;
+	padding: 15px;
+	margin: 0px 10px 10px 10px;
+}
+
+body {
+  margin: 0;
+  font-family: "Work Sans", sans-serif;
+  font-weight: 800;
+}
+
+.container {
+  width: 80%;
+  margin: 0 auto;
+}
+
+header {
+  background: #55d6aa;
+}
+
+header::after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+.logo {
+  float: left;
+  padding: 10px 0;
+}
+
+nav {
+  background-color: #675c47;
+  float: none;
+}
+
+nav ul {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+nav li {
+  display: inline-block;
+  margin-left: 70px;
+  padding-top: 23px;
+
+  position: relative;
+}
+
+nav a {
+  color: #444;
+  text-decoration: none;
+  text-transform: uppercase;
+  font-size: 14px;
+}
+
+nav a:hover {
+  color: #000;
+}
+
+nav a::before {
+  content: "";
+  display: block;
+  height: 5px;
+  background-color: #444;
+
+  position: absolute;
+  top: 0;
+  width: 0%;
+
+  transition: all ease-in-out 250ms;
+}
+
+nav a:hover::before {
+  width: 100%;
+}
+@media (max-width: 400px) {
+
+  body {
+    font-size: 16px;
+  }
+
+  .container {
+    width: 100%;
+  }
+
+  nav {
+    position: relative;
+    float: none;
+  }
+
+  nav ul {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  nav li {
+    margin: 10px 0;
+  }
+
+  nav a {
+    padding: 5px;
+  }
+}
